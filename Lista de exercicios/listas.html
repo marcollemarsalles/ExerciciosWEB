@@ -1,0 +1,106 @@
+<!-- Listas Ordenadas -->
+
+<h1> Lista Ordenada</h1>
+
+<h4>Lista de Aprovados</h4>
+
+<ol>
+    <li>Beatriz</li>
+    <li>Marcolle</li>
+    <li>Motoshima</li>
+    <li>Gabriela</li>
+    <li>João</li>
+    <li>Gabriel</li>
+
+</ol>
+
+<!-- Listas não ordenados -->
+
+<h1>Lista não Ordenadas</h1>
+
+<h4>Listas de Compras</h4>
+
+<ul>
+    <li>Queijo</li>
+    <li>Macarrão
+        <ul>
+            <li>Parafuso</li>
+        </ul>
+    </li>
+        
+    <li>Arroz</li>
+    <li>Óleo</li>
+    <li>Açucar</li>
+    <li>Feijão</li>
+
+</ul>
+
+<!-- Lista de Definição -->
+
+<h1>Lista de Definição</h1>
+
+<h4>Principais termos do glossário do programador</h4>
+
+<dl>
+    <dt>Bug</dt>
+        <dd>Erro no código</dd> <br>
+    <dt>Full-Stack</dt>
+        <dd>Desenvolvedor da porra toda</dd> <br>
+    <dt>Back-End</dt>
+        <dd>Programar as ações</dd> <br>
+    <dt>Front-End</dt>
+        <dd>Programar o que é visualizado</dd> <br>
+    <dt>Git</dt>
+        <dd>Versionamento de códigos</dd> <br>
+    <dt>POO</dt>
+        <dd>Programação orientada a objetos</dd> <br>
+</dl>
+
+<!-- Lista Aninhada -->
+
+<h1>Lista Aninhada</h1>
+
+<h4>Metas de estudo</h4>
+<ul>
+    <li>
+        <span wm-folder>Desenvolvimento WEB</span>
+        <ul>
+            <li>
+                <span wm-folder>PHP</span>
+                <ul>
+                    <li>1 Hora por dia de segunda a sexta</li>
+                    <li>1,5 Hora por dia de Sábado a Domingo</li>
+                </ul>
+            </li>
+            <li>
+                <span wm-folder>JavaScript</span>
+                <ul>
+                    <li>1 Hora por dia de segunda a sexta</li>
+                    <li>1,5 Hora por dia de Sábado a Domingo</li>
+                </ul>
+            </li>
+            <li>
+                <span wm-folder>HTML</span>
+                <ul>
+                    <li>1 Hora por dia de segunda a sexta</li>
+                    <li>1,5 Hora por dia de Sábado a Domingo</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function(e) {
+            const ul = folder.nextElementSibling
+            const d  = ul.style.display
+            ul.style.display = d === 'nome' ? 'block' : 'none'
+        }
+    })
+</script>
+
+
+
+
+
