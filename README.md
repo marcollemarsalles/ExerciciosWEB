@@ -20,3 +20,6 @@ Repositório criado no Git hub e atualizado diretamente do GIT BASH.
 7 - **Git commit -m** **"**Comentário referente as quais atualizações foram feitas**"**
 
 8 - **Git push** origin main
+
+
+**(Marcolle Marsalles)*
